@@ -56,7 +56,7 @@ const HeroSlider = () => {
         ]
     };
     return (
-        <div className="mb-4 pt-12">
+        <div className="mb-4 pt-8">
             <div className="slider-container flex-wrap">
                 <Slider {...settings}>
                     <div>
