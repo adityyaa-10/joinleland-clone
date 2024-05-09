@@ -21,58 +21,58 @@ const NavBar = () => {
         };
     }, []);
     return (
-        <div className="fixed inset-x-0 top-0 flex flex-col-reverse">
+        <div className="fixed inset-x-0 top-0 flex flex-col-reverse z-50">
             <nav className="relative flex h-20 flex-col items-center justify-between border-b border-[#e5e5e5] bg-white p-4 sm:h-20 sm:flex-row sm:px-6 sm:py-0">
                 <div className="flex w-full items-center justify-between sm:h-full">
                     {/* Sidebar Menu Button */}
                     <button className="p-3 sm:hidden"
                         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="size-6 text-leland-gray-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="size-6 ">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 6h18M17 12H3M3 18h10" vectorEffect="non-scaling-stroke"></path>
                         </svg>
                     </button>
                     <aside
                         ref={sidebarRef}
-                        className={`fixed inset-y-0 left-0 w-80 bg-[#f5f5f5] z-50 transition-transform duration-300 ease-in-out transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+                        className={`fixed inset-y-0 left-0 w-[270px] bg-[#f5f5f5] z-[500] transition-transform duration-300 ease-in-out transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
                             }`}
                     >
                         {/* Sidebar Content */}
-                        <div class="flex w-full flex-col bg-[#f5f5f5]">
-                            <div class="flex flex-col items-start border-b border-[#f5f5f5] bg-white px-6 py-10">
+                        <div className="flex w-full flex-col bg-[#f5f5f5]">
+                            <div className="flex flex-col items-start border-b border-[#f5f5f5] bg-white px-6 py-10">
                                 <a href="https://www.joinleland.com/signup">
-                                    <button type="button" class="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-white bg-[#15B078] border-[#15B078] disabled:bg-[#15B078] hover:bg-leland-primary-hover hover:border-leland-primary-hover shadow-transparent p-3 text-sm space-x-2 inline-flex font-medium rounded-lg cursor-pointer" aria-label="Get Started">
+                                    <button type="button" className="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-white bg-[#15B078] border-[#15B078] disabled:bg-[#15B078] shadow-transparent p-3 text-sm space-x-2 inline-flex font-medium rounded-lg cursor-pointer" aria-label="Get Started">
                                         <span>Get Started</span>
                                     </button>
                                 </a>
-                                <div class="mt-10 flex w-full flex-col items-start gap-6">
-                                    <a class="text-xl" href="/login">Sign in</a>
-                                    <a class="text-xl" href="/login">Browse Coaching</a>
-                                    <a class="text-xl" href="/login">Inbox</a>
-                                    <a class="text-xl" href="/login">Free Events</a>
-                                    <div class="fixed inset-0 bg-leland-white hidden px-6 pt-7">
+                                <div className="mt-10 flex w-full flex-col items-start gap-6">
+                                    <a className="text-xl" href="/login">Sign in</a>
+                                    <a className="text-xl" href="/login">Browse Coaching</a>
+                                    <a className="text-xl" href="/login">Inbox</a>
+                                    <a className="text-xl" href="/login">Free Events</a>
+                                    <div className="fixed inset-0 bg-white hidden px-6 pt-7">
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-4 p-6">
-                                <a class="text-leland-gray-dark font-normal flex items-center gap-4 text-lg leading-7 text-[#707070] w-full" href="/">
-                                    <div class="flex w-full items-center justify-between gap-3">
-                                        <div class="flex items-center gap-3 font-medium text-base">Home</div>
+                            <div className="flex flex-col gap-4 p-6">
+                                <a className=" font-normal flex items-center gap-4 text-lg leading-7 text-[#707070] w-full" href="/">
+                                    <div className="flex w-full items-center justify-between gap-3">
+                                        <div className="flex items-center gap-3 font-medium text-base">Home</div>
                                     </div>
                                 </a>
-                                <a class="text-leland-gray-dark font-normal flex items-center gap-4 text-lg leading-7 text-[#707070] w-full" href="/become-a-coach">
-                                    <div class="flex w-full items-center justify-between gap-3">
-                                        <div class="flex items-center gap-3 font-medium text-base">Become a coach</div>
+                                <a className=" font-normal flex items-center gap-4 text-lg leading-7 text-[#707070] w-full" href="/become-a-coach">
+                                    <div className="flex w-full items-center justify-between gap-3">
+                                        <div className="flex items-center gap-3 font-medium text-base">Become a coach</div>
                                     </div>
                                 </a>
-                                <a class="text-leland-gray-dark font-normal flex items-center gap-4 text-lg leading-7 text-[#707070] w-full" href="https://go.joinleland.com/partner/partnerships">
-                                    <div class="flex w-full items-center justify-between gap-3">
-                                        <div class="flex items-center gap-3 font-medium text-base">Partnerships</div>
+                                <a className=" font-normal flex items-center gap-4 text-lg leading-7 text-[#707070] w-full" href="https://go.joinleland.com/partner/partnerships">
+                                    <div className="flex w-full items-center justify-between gap-3">
+                                        <div className="flex items-center gap-3 font-medium text-base">Partnerships</div>
                                     </div>
                                 </a>
-                                <a class="text-leland-gray-dark font-normal flex items-center gap-4 text-lg leading-7 text-[#707070] w-full" href="/support">
-                                    <div class="flex w-full items-center justify-between gap-3">
-                                        <div class="flex items-center gap-3 font-medium text-base">Support</div>
+                                <a className=" font-normal flex items-center gap-4 text-lg leading-7 text-[#707070] w-full" href="/support">
+                                    <div className="flex w-full items-center justify-between gap-3">
+                                        <div className="flex items-center gap-3 font-medium text-base">Support</div>
                                     </div>
                                 </a>
                             </div>
@@ -88,35 +88,35 @@ const NavBar = () => {
                             </svg>
                         </a>
                     </div>
-                    <a className="relative flex sm:hidden cursor-pointer justify-end items-end space-x-2.5 rounded-md p-3 hover:bg-leland-gray-hover active:bg-leland-gray-hover font-semibold " role="menuitem" href="https://go.joinleland.com/partner/partnerships">
+                    <a className="relative flex sm:hidden cursor-pointer justify-end items-end space-x-2.5 rounded-md p-3 font-semibold " role="menuitem" href="https://go.joinleland.com/partner/partnerships">
                         <div className="flex w-full items-center justify-between whitespace-nowrap">
                             <div className="flex items-center gap-2.5"><span>Join</span></div>
                         </div>
                     </a>
                     <div className="flex h-full shrink-0 items-center justify-end space-x-6 whitespace-nowrap text-base text-[#333]">
-                        <a className="relative hidden sm:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 hover:bg-slate-100 active:bg-leland-gray-hover font-semibold" role="menuitem" href="/events">
+                        <a className="relative hidden sm:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 hover:bg-slate-100 font-semibold" role="menuitem" href="/events">
                             <div className="flex w-full items-center justify-between whitespace-nowrap">
                                 <div className="flex items-center gap-2.5"><span>Free events</span></div>
                             </div>
                         </a>
-                        <a className="relative hidden sm:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 hover:bg-leland-gray-hover active:bg-leland-gray-hover font-semibold" role="menuitem" href="/become-a-coach">
+                        <a className="relative hidden sm:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 font-semibold" role="menuitem" href="/become-a-coach">
                             <div className="flex w-full items-center justify-between whitespace-nowrap">
                                 <div className="flex items-center gap-2.5"><span>Become a coach</span></div>
                             </div>
                         </a>
-                        <a className="relative hidden md:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 hover:bg-leland-gray-hover active:bg-leland-gray-hover font-semibold" role="menuitem" href="https://go.joinleland.com/partner/partnerships">
+                        <a className="relative hidden md:flex w-full cursor-pointer items-center justify-start space-x-2.5 rounded-md p-3 font-semibold" role="menuitem" href="https://go.joinleland.com/partner/partnerships">
                             <div className="flex w-full items-center justify-between whitespace-nowrap">
                                 <div className="flex items-center gap-2.5"><span>Partnerships</span></div>
                             </div>
                         </a>
                         <div className="hidden lg:flex h-full shrink-0 items-center space-x-3">
                             <a href="/login">
-                                <button type="button" className="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-leland-gray-dark bg-white disabled:bg-white border-leland-gray-stroke hover:bg-leland-gray-hover shadow-transparent p-3 text-sm space-x-2 inline-flex font-semibold rounded-lg cursor-pointer" aria-label="Log In">
+                                <button type="button" className="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border  bg-white disabled:bg-white shadow-transparent p-3 text-sm space-x-2 inline-flex font-semibold rounded-lg cursor-pointer" aria-label="Log In">
                                     <span>Log In</span>
                                 </button>
                             </a>
                             <a href="https://www.joinleland.com/signup">
-                                <button type="button" class="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-white bg-[#15B078] border-[#15B078] disabled:bg-[#15B078] hover:bg-leland-primary-hover hover:border-leland-primary-hover shadow-transparent p-3 text-sm space-x-2 inline-flex font-medium rounded-lg cursor-pointer" aria-label="Get Started">
+                                <button type="button" className="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-white bg-[#15B078] border-[#15B078] disabled:bg-[#15B078] shadow-transparent p-3 text-sm space-x-2 inline-flex font-medium rounded-lg cursor-pointer" aria-label="Get Started">
                                     <span>Get Started</span>
                                 </button>
                             </a>
