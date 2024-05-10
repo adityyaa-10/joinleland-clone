@@ -57,7 +57,7 @@ const HeroSlider = () => {
     };
     return (
         <div className="mb-4 pt-8">
-            <div className="slider-container flex-wrap">
+            <div className="slider-container">
                 <Slider {...settings}>
                     <div>
                         <Image src={'/bain.png'} width={150} height={100} />

@@ -38,7 +38,7 @@ const NavBar = () => {
                             }`}
                     >
                         {/* Sidebar Content */}
-                        <div className="flex w-full flex-col bg-[#f5f5f5]">
+                        <div className="flex sm:hidden w-full flex-col bg-[#f5f5f5]">
                             <div className="flex flex-col items-start border-b border-[#f5f5f5] bg-white px-6 py-10">
                                 <a href="https://www.joinleland.com/signup">
                                     <button type="button" className="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border text-white bg-[#15B078] border-[#15B078] disabled:bg-[#15B078] shadow-transparent p-3 text-sm space-x-2 inline-flex font-medium rounded-lg cursor-pointer" aria-label="Get Started">

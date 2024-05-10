@@ -5,6 +5,7 @@ import Marketing from "@/components/Marketing/Marketing"
 import Features from "@/components/Features"
 import UpcomingEvents from "@/components/UpcomingEvents/UpcomingEvents"
 import GetStarted from "@/components/GetStarted"
+import Testimonials from "@/components/Testimonials/Testimonials"
 
 const Home = () => {
   return (
@@ -18,8 +19,8 @@ const Home = () => {
           <Features />
           <UpcomingEvents />
           <GetStarted />
+          <Testimonials />
         </div>
-        <div className="mt-80"></div>
       </div>
     </div>
   )
