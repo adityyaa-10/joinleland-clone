@@ -15,7 +15,7 @@ function TestimonialSliderLTR() {
         arrows: false,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 1,
@@ -28,7 +28,20 @@ function TestimonialSliderLTR() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                    speed: 7000,
+                    autoplaySpeed: 0,
+                    cssEase: 'linear',
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -41,7 +54,7 @@ function TestimonialSliderLTR() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 650,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
