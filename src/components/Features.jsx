@@ -2,7 +2,7 @@
 
 const Features = () => {
     return (
-        <section className=" w-full items-center border-b border-[#E5E5E5] -mt-24 sm:px-6 mb-4">
+        <section className=" w-full items-center border-b border-[#E5E5E5] -mt-24 sm:px-6">
             <div className="mx-auto flex max-w-7xl flex-col">
                 <header className="flex flex-col items-center space-y-2 text-center">
                     <h2 className="text-base font-medium uppercase tracking-wider text-[#707070]">How it works</h2>

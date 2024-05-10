@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar"
 import PopularCategories from "@/components/Categories/PopularCategories"
 import Marketing from "@/components/Marketing/Marketing"
 import Features from "@/components/Features"
+import UpcomingEvents from "@/components/UpcomingEvents/UpcomingEvents"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           <PopularCategories />
           <Marketing />
           <Features />
+          <UpcomingEvents />
         </div>
 
       </div>
