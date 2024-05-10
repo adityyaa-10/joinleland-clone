@@ -6,6 +6,8 @@ import Features from "@/components/Features"
 import UpcomingEvents from "@/components/UpcomingEvents/UpcomingEvents"
 import GetStarted from "@/components/GetStarted"
 import Testimonials from "@/components/Testimonials/Testimonials"
+import Join from "@/components/Join"
+import Footer from "@/components/Footer"
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
           <UpcomingEvents />
           <GetStarted />
           <Testimonials />
+          <Join />
+          <Footer />
         </div>
       </div>
     </div>

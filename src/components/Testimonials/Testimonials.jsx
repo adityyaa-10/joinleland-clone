@@ -16,7 +16,7 @@ const Testimonials = () => {
                 <TestimonialSliderRTL />
             </div>
             <div className="mt-28 px-6">
-                <h3 class="text-center uppercase tracking-wider text-[#9b9b9b]">Get into organizations like</h3>
+                <h3 className="text-center uppercase tracking-wider text-[#9b9b9b]">Get into organizations like</h3>
                 <div className="mt-11 flex flex-wrap justify-center gap-x-6 gap-y-20 px-6 text-white">
                     <Image src={'/bcg.svg'} width={56} height={24} />
                     <Image src={'/stanford.svg'} width={111} height={44} />
