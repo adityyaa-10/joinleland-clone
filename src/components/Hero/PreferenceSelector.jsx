@@ -69,7 +69,7 @@ const PreferenceSelector = () => {
                         </svg>
                     </button>
                     {showGoalDropdown && (
-                        <div className="absolute top-full left-0 p-2 w-full border border-[#fafafa] bg-white shadow-md rounded-lg mt-3 h-[149px]">
+                        <div className="absolute top-full z-30 left-0 p-2 w-full border border-[#fafafa] bg-white shadow-md rounded-lg mt-3 h-[149px]">
                             {goals.map((goal) => (
                                 <button
                                     key={goal}
@@ -113,7 +113,7 @@ const PreferenceSelector = () => {
                         </svg>
                     </button>
                     {showCategoryDropdown && (
-                        <div className="absolute top-full left-0 w-full p-2 border border-[#fafafa] bg-white shadow-md rounded-lg mt-3 overflow-y-auto max-h-[150px]">
+                        <div className="absolute top-full z-30 left-0 w-full p-2 border border-[#fafafa] bg-white shadow-md rounded-lg mt-3 overflow-y-auto max-h-[150px]">
                             {categories.map((category) => (
                                 <button
                                     key={category}
