@@ -3,7 +3,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CategoryCard from "./CategoryCard";
+import EachMarketingCard from "./EachMarketingCard";
 
 function SampleNextArrow(props) {
     const { className, onClick } = props;
@@ -34,7 +34,7 @@ function SamplePrevArrow(props) {
 }
 
 
-const CategoriesSlider = () => {
+const MarketingSlider = () => {
     var settings = {
         arrows: true,
         dots: false,
@@ -73,20 +73,17 @@ const CategoriesSlider = () => {
         ]
     };
     return (
-        < div className="slider-container" >
+        <div className="slider-container">
             <Slider {...settings}>
-                <CategoryCard title="MBA" />
-                <CategoryCard title="Management Consulting" />
-                <CategoryCard title="GMAT" />
-                <CategoryCard title="Medical School" />
-                <CategoryCard title="College" />
-                <CategoryCard title="Product Management" />
-                <CategoryCard title="Management Consulting" />
-                <CategoryCard title="Management Consulting" />
-                <CategoryCard title="Management Consulting" />
+                <EachMarketingCard />
+                <EachMarketingCard />
+                <EachMarketingCard />
+                <EachMarketingCard />
+                <EachMarketingCard />
+                <EachMarketingCard />
             </Slider>
         </div>
     )
 }
 
-export default CategoriesSlider
+export default MarketingSlider
